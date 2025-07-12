@@ -1,0 +1,139 @@
+/* src/components/History/History.css */
+.history-section {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.history-header h2 {
+  color: #1976d2;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.clear-history-btn {
+  padding: 10px 20px;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.clear-history-btn:hover {
+  background: #b71c1c;
+}
+
+.empty-history {
+  text-align: center;
+  padding: 40px 0;
+  color: #666;
+}
+
+.empty-history p {
+  margin: 10px 0;
+}
+
+.history-list {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.history-record {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.history-record:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.record-date {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.record-currencies {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.record-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.record-amount {
+  font-weight: 600;
+  font-size: 1.1rem;
+  background: #e3f2fd;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.record-arrow {
+  color: #1976d2;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.record-result {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2e7d32;
+  background: #e8f5e9;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.record-names {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .record-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .record-arrow {
+    display: none;
+  }
+}
